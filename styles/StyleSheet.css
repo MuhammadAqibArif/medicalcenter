@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap');
+
+/* text Slide up transition  */
+@keyframes slideInFromBotton {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.transistion-text{
+  animation: 1s ease-out 0s 1 slideInFromBotton;
+}
+/* image zoom in transition on Load */
+@keyframes slideInFromLeft {
+  0% {
+      transform: translateX(-100%);
+  }
+  100% {
+      transform: translateX(0);
+  }
+}
+@keyframes slideInFromRight {
+  0% {
+      transform: translateX(100%);
+  }
+  100% {
+      transform: translateX(0);
+  }
+}
+.transistion-img{
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+.transistion-imgR{
+  animation: 1s ease-out 0s 1 slideInFromRight;
+}
+*{
+    font-family: 'Jost' ;
+      margin: 0;
+      padding: 0;
+}
+
+  /* Header and Nav Css here */
+  .herder {
+    position: fixed;
+    width: 100%;
+    /* display: flex; */
+    align-items: center;
+    z-index: 1000;
+    transition: 1s;
+    background-color: white;
+  }
+  .header.sticky{
+    background-color: white;
+    box-shadow: 0 .1rem 1rem lightgray;
+  }
+
+  .header-img{
+    padding: 23px 10px 10px 10px;
+  }
+  .margin-32{
+  margin-right: 32px;
+  margin-left: 32px;
+ 
+  }
+  .pad-32{
+    padding: 0px 32px;
+  }
+  .p-10{
+    padding: 10px;
+  }
+
+  .micons a {
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 21px;
+}
+
+.bottom-border{
+  border-bottom: black solid 1px;
+}
+
+.nav-pad{
+  padding: 20px 0px 20px 30px;
+  text-transform: uppercase;
+  letter-spacing: 2.41px;
+  font-size: 13px;
+  font-weight: 500;
+}
+/* Header and Nav Css here */
+
+ /* Section 1 Css here  */
+
+ .img-fluid{
+  position: relative;
+}
+
+h5.Blue{
+  color: #013CA3;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.boxcont{
+  background-color: #d1e4ff;
+  /* display: flex; */
+  text-align: left;
+  /* position: absolute; */
+  z-index: 10;
+  bottom: 0%;
+  left: 5%;
+  padding-top: 10px;
+}
+.box-left-padd{
+  padding:  35px 0px 30px 35px;
+  border-color: rgba(0, 0, 0, 0.06);
+  border-width: 0px 1px 0px 0px;
+  border-style: solid;
+}
+.box-left-padd-last{
+  padding:  35px 0px 30px 35px;
+}
+.boxrightpadd{
+  padding-right: 10px;
+}
+
+ /* Section 1 Css here End */
+
+ /* Section 2 Css here */
+
+ .imgboder{
+  border-style: solid;
+  border-width: 2px;
+  border-color: blue;
+  border-radius: 10px;
+  align-items: center;
+  
+}
+
+.boxtreat{
+  /* background-color: pink; */
+  position: relative;
+}
+.textlight{
+  color: #52A2FD; 
+  font-weight: 500;
+}
+h2.Blue{
+  color: #013CA3;
+  font-size: 32px;
+  font-weight: 500;
+}
+.p-color{
+  color: #54546F; 
+}
+ /* Section 2 Css here End */
+
+ .sectionbackground{
+  background-color: #eef5f5;
+  padding: 120px 30px 132px 20px;
+ }
+
+  /* section 4 css here */
+
+  .cardwidth{
+    width: 18rem;
+  }
+  /* section 4 css here End */
+
+
+  /* Section 4 Css here */
+ button {
+  background-color: #ff583c;
+  color: white;
+  padding: 14px 80px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.input-feild{
+  width: 100%;
+  height: 56px;
+  background-color: #ffffff;
+  font-size: 16px;
+  line-height: 64px;
+  color: #54546f;
+  font-weight: 400;
+  border: 0;
+  margin-bottom: 15px;
+  padding-left: 25px;
+  border-radius: 0;
+}
+
+/* Section 4 here Css End */
+
+/* section 5 here Css */
+
+h2.White{
+  color: white;
+  font-size: 32px;
+  font-weight: 500;
+}
+h4.White{
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+}
+.background-Blue{
+  background-color: #013CA3;
+  padding: 70px 30px 70px 20px;
+}
+/* section 5 here Css End */
+
+/* Footer Css here  */
+
+.text-container {
+  flex: 1;
+  margin: 0px 0px 0px 54px;
+}
+
+.image-container {
+  flex: 1;
+  margin-right: 20px;
+  display: inline-block;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.about-us {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  background-color: #F0F5FF;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.about-us h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.about-us p {
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.about-us a {
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+}
+
+.about-us a:hover {
+  background-color: #0067cc;
+}
+
+footer {
+  padding: 20px;
+  text-align: left;
+  background-color: #DCE5E5;
+  color: #667E8E;
+}
+
+/* Footer Css here End */
+
+
+
+/* only Padding here top, bottom, right, left */
+
+.pt-20{
+  padding-top: 20px;
+}
+.pt-30{
+  padding-top: 30px;
+}
+.pb-30{
+  padding-bottom: 30px;
+}
+.pad-trb{
+  padding: 15px 10px 15px 0px;
+}
+.pl-20{
+  padding-left: 20px;
+}
+.pr-20{
+  padding-right: 20px;
+}
+.pl-50{
+  padding-left: 50px;
+}
+.pr-55{
+  padding-right: 55px;
+}
+.pt-100{
+  padding-top: 100px;
+}
+.pt-50{
+  padding-top: 50px;
+}
+/* only Padding here top, bottom, right, left */
+
+/* only margin here  */
+
+.mr-10{
+  margin-right: 10px;
+}
+.mt-15{
+  margin-top: 10px;
+}
+
+/* Font Sizes Here */
+
+.f8{
+  font-size: 8px;
+}
+.f9{
+font-size: 9px;
+}
+.f10{
+  font-size: 10px;
+}
+.f11{
+  font-size: 11px;
+}
+.f12{
+  font-size: 12px;
+}
+.f13{
+  font-size: 13px;
+}
+.f14{
+  font-size: 14px;
+}
+.f15{
+  font-size: 15px;
+}
+.f16{
+  font-size: 16px;
+}
+
+/* Font Sizes Here */
+
+  h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+    margin-bottom: 0;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff; /* White background for sections */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+
+
+.centr{
+    text-align: center;
+}
+
+
+
+  
+ 
+

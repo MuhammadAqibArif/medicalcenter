@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.title {
+  text-align: center;
+}
+.offers-container {
+  width: 85% !important;
+}
+/* .offers-card {
+  width: 50%;
+  padding: 0 10%;
+} */
+/* .offers-card > img {
+  width: 680px;
+  max-width: 100%;
+  height: 290px;
+  border: 2px solid #0053b1;
+  border-radius: 10px;
+  display: inline-block;
+}
+.offers-card > img:hover {
+  transform: scale(1);
+  transition: all 0.3s ease;
+  width: 110%;
+  height: 100%;
+} */
+.img-box > img {
+  width: 720px;
+  max-width: 100%;
+  height: 290px;
+
+  border: 2px solid #0053b1;
+  border-radius: 10px;
+}
+.img-box {
+  display: inline-block;
+}
+.img-box:hover {
+  transform: scale(1.03);
+  transition: all 0.3s ease;
+}
+.img-box-full {
+  width: 100%;
+}
+.img-box-full > img {
+  min-width: 100%;
+  height: 290px;
+}
+.offers-card > h3 {
+  font-size: 22px;
+  color: #0053b1;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin: 20px 0 30px 0;
+}
+.offers-card > p {
+  color: #3d3c37;
+  line-height: 28px !important;
+  font-size: 16px;
+}
+.why-us {
+  height: 700px;
+  padding: auto;
+  align-items: center;
+  width: auto;
+  background: url(./../assets/images/bg-img.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  overflow: hidden !important;
+  background-size: cover;
+  background-position: center center;
+}
+.about-our-services > * {
+  padding-left: 0 !important;
+}
+.about-our-services {
+  align-items: center;
+}
+.spacer {
+  height: 100px;
+}
+.title-head {
+  background: url(https://alkubaisimedical.com/wp-content/uploads/2023/12/banner-900x180-copy.jpg);
+  color: #fff;
+  padding: 10px;
+  margin: 20px 0;
+  border-radius: 10px;
+}
+@media screen and (max-width: 992px) {
+  .offers-container {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .why-us {
+    background-position: top left;
+  }
+}
