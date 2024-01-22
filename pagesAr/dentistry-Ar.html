@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
   <head>
-    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dr. Shaikha Alkabaisi Medical Center</title>
     <link rel="icon" type="image/x-icon" href="/images/Favicon.png">
@@ -19,63 +19,68 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="/styles/style.css">
-    <script src="/js/navbar.js"></script>
+    <!-- <script src="/js/navbar.js"></script> -->
   </head>
   <body>
 
     
     <header>
-      <nav class="navbar navbar-expand-custom navbar-mainbg nav-padding fixed-top">
-        <a class="navbar-brand navbar-logo" href="/index.html"><img src="http://alkubaisimedical.com/wp-content/uploads/2023/10/Logo-1.png" width="150"
+
+      <nav class="navbar navbar-expand-custom navbar-mainbg d-flex flex-row-reverse fixed-top">
+        <a class="navbar-brand navbar-logo" href="/index-ar.html"><img src="http://alkubaisimedical.com/wp-content/uploads/2023/10/Logo-1.png" width="150"
           height="54"  alt=""></a>
         <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onclick="hideBtn()">
-        <i class="fas fa-bars  m-0"></i>
+        <i class="fas fa-bars m-0"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav m-auto">
+          <ul class="navbar-nav m-auto flex-lg-row-reverse">
             <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
             <li class="nav-item ">
-              <a class="nav-link" href="/index.html"><i class="fa-solid fa-house"></i>HOME</a>
-            </li>
-            <li class="nav-item ">
-              <a class="nav-link" href="/pages/About-clinic.html"><i class="fa-solid fa-address-card"></i>ABOUT US</a>
+              <a class="nav-link text-right" href="/index-ar.html"><i class="fa-solid fa-house"></i>الرئيسية</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/pages/Contact-Clinic.html"><i class="far fa-address-book"></i>CONTACT US</a>
+              <a class="nav-link text-right" href="/pagesAr/About-clinic-Ar.html"><i class="fa-solid fa-address-card"></i> معلومات عنا</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/pages/dermatology.html"><i class="fa-solid fa-user-doctor"></i>DERMATOLOGY</a>
+              <a class="nav-link text-right" href="/pagesAr/Contact-Clinic-Ar.html"><i class="far fa-address-book"></i>اتصل بنا</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-right" href="/pagesAr/dermatology-Ar.html"><i class="fa-solid fa-user-doctor"></i>الأمراض الجلدية</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="/pages/dentistry.html"><i class="fa-solid fa-tooth"></i>DENTISTRY</a>
+              <a class="nav-link text-right" href="/pagesAr/dentistry-Ar.html"><i class="fa-solid fa-tooth"></i>طب الأسنان</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/pages/offers.html"><i class="fa-brands fa-buffer"></i>OFFERS</a>
+              <a class="nav-link text-right" href="/pagesAr/offers-Ar.html"><i class="fa-brands fa-buffer"></i>عروض</a>
             </li>
-            <li class="d-sm-flex d-xs-flex d-md-flex d-lg-none nav-social-collapse row ml-1">
+            <li class="d-sm-flex d-xs-flex d-md-flex d-lg-none nav-social-collapse row ml-1" style="justify-content: center;">
               <div class="col-2 dropdown pr-8">
-                <a href="/index-ar.html" style="right: 20px; bottom: 6px;"><button class="dropbtn">عربي</button></a>
+                <a href="/index.html" style="right: 20px; bottom: 6px;"><button class="dropbtn">Eng</button></a>
               </div>
               <a href="#" class="col-2"><i class="fa-solid fa-circle-info text-cus"></i></a>
               <a href="https://wa.me/97433481010" class="col-2"><i class="fa-brands fa-whatsapp text-cus"></i></a>
-              <a href="https://www.instagram.com/dr.shaikha.mc?igsh=MTMycHF5ZXFkeHBydw==" class="col-2"><i class="fa-brands fa-instagram text-cus"></i></a>
-              
+              <a href="https://www.instagram.com/dr.shaikha.mc?igsh=MTMycHF5ZXFkeHBydw==" class="col-2"><i class="fa-brands fa-instagram text-cus"></i></a>            
               <a href="https://www.tiktok.com/@drshaikhaalkubaisi?_t=8ic3nBfW3Os&_r=1" class="col-2"><i class="fa-brands fa-tiktok text-cus"></i></a>
             </li>
-            
           </ul>
         </div>
-        <div class="dropdown" id="btndn" style="display: block;">
-          <a href="/pagesAr/dentistry-Ar.html"><button class="dropbtn">عربي</button></a>
+        <div class="dropdown" id="btndn" style="display: block; padding-left: 5px;">
+          <a href="/pages/dentistry.html"><button class="dropbtn">Eng</button></a>
         </div>
         <div class="navbar-brand navbar-logo navbar-social m-0">
+          <a href="https://www.tiktok.com/@drshaikhaalkubaisi?_t=8ic3nBfW3Os&_r=1" class=""><i class="fa-brands fa-tiktok icon-color"></i></a>
+          <a href="https://www.instagram.com/dr.shaikha.mc?igsh=MTMycHF5ZXFkeHBydw==" class=""><i class="fa-brands fa-instagram icon-color"></i></a>
+          <a href="https://wa.me/97433481010" class=""><i class="fa-brands fa-whatsapp icon-color"></i></a>
           <div class="dropdown">
             <i class="fa-solid fa-circle-info icon-color"></i>
-            <div class="dropdown-content">
+            <div class="dropdown-content-ar">
               <a href="">
                 <div>
                   <h5>Contact Phone</h5>
@@ -87,13 +92,10 @@
             </div>
           </div>
           
-          <a href="https://wa.me/97433481010" class=""><i class="fa-brands fa-whatsapp icon-color"></i></a>
-          <a href="https://www.instagram.com/dr.shaikha.mc?igsh=MTMycHF5ZXFkeHBydw==" class=""><i class="fa-brands fa-instagram icon-color"></i></a>
-          <a href="https://www.tiktok.com/@drshaikhaalkubaisi?_t=8ic3nBfW3Os&_r=1" class=""><i class="fa-brands fa-tiktok icon-color"></i></i></a>
         </div>
         
       </nav>
-    </header>
+      </header>
 
     
     <!-- <div class="spacer"></div> -->
@@ -101,7 +103,7 @@
       <div class="title title-head">
         <h2>Dentistry Services</h2>
       </div>
-      <div class="row">
+      <div class="row flex-row-reverse text-right">
         <div class="col-md-4 col-sm-12 offers-card pe-md-2 pe-xs-0">
           <!-- <img src="./../assets/images/lusail university.jpg" alt="" /> -->
           <div class="img-box">
@@ -110,14 +112,14 @@
               alt=""
             />
           </div>
-          <h3>Veneers ( Hollywood Smile )</h3>
+          <h3>القشور التجميلية (ابتسامة هوليود)</h3>
           <p>
-            Veneers ( Hollywood smile ) Veneers are thin, custom-made shells of
-            tooth-colored materials designed to cover the front surface of teeth
-            to improve your appearance. These shells are bonded to the front of
-            the teeth changing their color, shape, size, or length. Veneers have
-            high resistance to discoloration, unlike bleaching. It only takes
-            two visits to the dentist for changing your smile.
+            القشور (ابتسامة هوليود) القشور هي عبارة عن قشور رقيقة مصنوعة حسب الطلب
+            مواد بلون الأسنان مصممة لتغطية السطح الأمامي للأسنان
+            لتحسين مظهرك. يتم ربط هذه القذائف بالجزء الأمامي من
+            تغير الأسنان في لونها أو شكلها أو حجمها أو طولها. القشرة لديها
+            مقاومة عالية لتغير اللون، على عكس التبييض. إنها فقط تأخذ
+            زيارتين لطبيب الأسنان لتغيير ابتسامتك.
           </p>
         </div>
         <div
@@ -129,13 +131,13 @@
               alt=""
             />
           </div>
-          <h3>Crown And Bridge</h3>
+          <h3>التاج والجسر</h3>
           <p>
-            The main functional lies in replacing missing teeth, protecting weak
-            ones, restoring the broken tooth, and achieve a beautiful smile. In
-            Dr. Shaikha Al-kubaisi Medical Center we use the strongest material
-            and more stable in color for making the prosthesis. the doctor can
-            prepare and fix the crowns & bridges in two visits only “
+            الوظيفة الرئيسية تكمن في تعويض الأسنان المفقودة، وحماية الأسنان الضعيفة
+            منها، وترميم الأسنان المكسورة، والحصول على ابتسامة جميلة. في
+            مركز الدكتورة شيخة الكبيسي الطبي نستخدم أقوى المواد
+            وأكثر استقرارًا في اللون لصنع الطرف الاصطناعي. يستطيع الطبيب
+            تجهيز وتركيب التيجان والجسور في زيارتين فقط.
           </p>
         </div>
         <div class="col-md-4 col-sm-12 offers-card ps-md-2 ps-xs-0">
@@ -145,17 +147,17 @@
               alt=""
             />
           </div>
-          <h3>Routine Dental Checkup</h3>
+          <h3>فحص الأسنان الروتيني</h3>
           <p>
-            Cleaning teeth is the best prevention from all dental problems.
-            Extra to the daily brushing patients can visit their dentist for a
-            professional cleaning ( scaling ) where the doctor will be able to
-            remove the calculus and hard deposits between teeth. Scaling and
-            polishing can be done every 6 months.
+            تنظيف الأسنان هو أفضل وقاية من جميع مشاكل الأسنان.
+            بالإضافة إلى ذلك، يمكن لمرضى التنظيف اليومي بالفرشاة زيارة طبيب أسنانهم للحصول على
+            التنظيف الاحترافي (التقشير) حيث يستطيع الطبيب القيام بذلك
+            إزالة القلح والرواسب الصلبة بين الأسنان. التحجيم و
+            يمكن إجراء التلميع كل 6 أشهر.
           </p>
         </div>
       </div>
-      <div class="row">
+      <div class="row flex-row-reverse text-right">
         <div class="col-md-4 col-sm-12 offers-card pe-md-2 pe-xs-0">
           <!-- <img src="./../assets/images/lusail university.jpg" alt="" /> -->
           <div class="img-box">
@@ -164,12 +166,12 @@
               alt=""
             />
           </div>
-          <h3>Pedodontic</h3>
+          <h3>طب أسنان الأطفال</h3>
           <p>
-            Pedodontic includes all type of dental treatment for deciduous teeth
-            like filling, pupotpmy , pulpectomy ,extraction, space maintenance,
-            fluoride application, and protecting permanent teeth by ( fissures
-            sealant)
+            يشمل طب أسنان الأطفال جميع أنواع علاجات الأسنان للأسنان اللبنية
+            مثل الحشو، واستئصال الدم، واستئصال اللب، والاستخراج، وصيانة المساحة،
+            تطبيق الفلورايد، وحماية الأسنان الدائمة
+            ( مانع تسرب الشقوق ) .
           </p>
         </div>
         <div
@@ -181,13 +183,13 @@
               alt=""
             />
           </div>
-          <h3>Teeth Bleaching</h3>
+          <h3>تبييض الأسنان</h3>
           <p>
-            Bleaching is a common and safe procedure in dental clinics, It is
-            making teeth whiter than it is. Dentist uses special material for
-            bleaching the teeth and protecting the soft tissue. The best result
-            can be achieved by doing in-office bleaching and then continuing
-            with home bleaching trays.
+            التبييض هو إجراء شائع وآمن في عيادات الأسنان، وهو كذلك
+            جعل الأسنان أكثر بياضاً مما هي عليه. يستخدم طبيب الأسنان مواد خاصة ل
+            تبييض الأسنان وحماية الأنسجة الرخوة. أفضل نتيجة
+            يمكن تحقيق ذلك عن طريق إجراء التبييض في العيادة ثم الاستمرار
+            مع صواني التبييض المنزلية.
           </p>
         </div>
         <div class="col-md-4 col-sm-12 offers-card ps-md-2 ps-xs-0">
@@ -197,15 +199,15 @@
               alt=""
             />
           </div>
-          <h3>Clear Aligners</h3>
+          <h3>محاذاة واضحة</h3>
           <p>
-            It is a clear tray aligner that is custom-made for each patient. It
-            is a comfortable alternative to braces. The patient will change the
-            tray every 2 weeks in the dental clinic.
+            وهو عبارة عن مصفف شفاف مصمم خصيصًا لكل مريض. هو - هي
+            هو بديل مريح للأقواس. سوف يقوم المريض بتغيير
+            صينية كل أسبوعين في عيادة الأسنان.
           </p>
         </div>
       </div>
-      <div class="row">
+      <div class="row flex-row-reverse text-right">
         <div class="col-md-4 col-sm-12 offers-card pe-md-2 pe-xs-0">
           <!-- <img src="./../assets/images/lusail university.jpg" alt="" /> -->
           <div class="img-box">
@@ -214,10 +216,10 @@
               alt=""
             />
           </div>
-          <h3>Night Guard</h3>
+          <h3>الحرس الليلي</h3>
           <p>
-            It is a removable appliance for protecting teeth and the joint from
-            parafunctional habits at night like clenching and grinding.
+            وهو جهاز قابل للإزالة لحماية الأسنان والمفاصل من
+            عادات غير وظيفية في الليل مثل الانقباض والطحن.
           </p>
         </div>
         <div
@@ -229,14 +231,14 @@
               alt=""
             />
           </div>
-          <h3>Root Canal Treatment</h3>
+          <h3>معالجة قناة الجذر</h3>
           <p>
-            This is the procedure of removing the inflamed pulp and cleaning the
-            root canals of the tooth under local anaesthesia and witout pain .
-            The dentist will fill up the root canals after cleaning it to
-            protect it from infection. It is better to crown the tooth and root
-            canal treatment to protect from fractures and avoid extracting it in
-            the future.
+            هذا هو إجراء إزالة اللب الملتهب وتنظيف اللب
+            معالجة قنوات جذر السن تحت التخدير الموضعي وبدون ألم.
+            سيقوم طبيب الأسنان بملء قنوات الجذر بعد تنظيفها
+            حمايته من العدوى. من الأفضل تتويج السن والجذر
+            معالجة القناة للحماية من الكسور وتجنب خلعها
+            المستقبل.
           </p>
         </div>
         <div class="col-md-4 col-sm-12 offers-card ps-md-2 ps-xs-0">
@@ -246,7 +248,7 @@
               alt=""
             />
           </div>
-          <h3>Pedometric Anterior Ceramic Crown</h3>
+          <h3>تاج سيراميك أمامي لقياس الأقدام</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis
             deleniti, illo suscipit pariatur voluptate ex voluptatum! Sed dolore
@@ -299,7 +301,7 @@
       </div>
 
       <div class="spacer"></div> -->
-      <div class="row ">
+      <div class="row flex-row-reverse text-right">
         <div class="col-md-5 col-sm-12 d-md-block d-sm-none d-none">
           <img
             width="90%"
@@ -361,24 +363,25 @@
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
     </section>
+
     <div class="spacer"></div>
-    <section class="about-us mb-0 d-flex flex-wrap justify-content-center align-items-center row m-0">
+    <section class="about-us mb-0 d-flex flex-wrap justify-content-center align-items-center row m-0 flex-row-reverse">
       <div class="image-container footer-img col-lg-5 col-xl-5 col-md-12 col-sm-12 col-xs-12 my-sm-5 d-flex align-items-center justify-content-center">
         <img  src="https://alkubaisimedical.com/wp-content/uploads/2023/10/Logo-1.png"  alt="About Us image">
       </div>
 
-      <div class="footer text-container text-left col-lg-5 col-xl-5 col-md-5 col-sm-12">
-          <h5 class="Blue">Contact Us</h5>
-          <p  class="p-color">850 Al Duhail Street, Doha, Qatar</p>
+      <div class="footer text-container col-lg-5 col-xl-5 col-md-5 col-sm-12 text-right">
+          <h5 class="Blue">اتصل بنا</h5>
+          <p  class="p-color">850 شارع الدحيل، الدوحة، قطر</p>
           <p  class="p-color">(+974) 4416 8888</p>
-          <p  class="p-color">9:00 am - 9:00 pm</p>
-          <p  class="p-color">Saturday - Thursday</p>
+          <p  class="p-color">٩:٠٠ صباحاً - ٩:٠٠ مساءً</p>
+          <p  class="p-color">السبت - الخميس</p>
           <p class="p-color"><a href="mailto:contact@alkubaisimedical.com">contact@alkubaisimedical.com</a></p>
         </div>
     </section> 
-    <footer class="row m-0">
+    <footer class="row m-0 d-flex flex-row-reverse">
       <p class="container-80 col-lg-5 col-xl-5 col-md-6 col-sm-6 text-center">
-        &nbsp &#169 2023 RTH Marketing Agency. All Rights Reserved
+        &nbsp &#169 2023 وكالة التسويق RTH. كل الحقوق محفوظة
       </p>
       <div class="col-7"></div>
     </footer>
