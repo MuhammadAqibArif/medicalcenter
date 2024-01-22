@@ -31,20 +31,21 @@
 
 
     <header>
-      <nav class="navbar navbar-expand-custom navbar-mainbg nav-padding fixed-top">
+
+      <nav class="navbar navbar-expand-custom navbar-mainbg d-flex flex-row-reverse">
         <a class="navbar-brand navbar-logo" href="index.html"><img src="http://alkubaisimedical.com/wp-content/uploads/2023/10/Logo-1.png" width="150"
           height="54"  alt=""></a>
-        <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onclick="hideBtn()">
+        <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-bars m-0"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav m-auto">
+          <ul class="navbar-nav m-auto d-flex flex-row-reverse">
             <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
             <li class="nav-item ">
-              <a class="nav-link" href="index.html"><i class="fa-solid fa-house"></i>HOME</a>
+              <a class="nav-link" href="index-ar.html"><i class="fa-solid fa-house"></i>HOME</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="pages/About-clinic.html"><i class="fa-solid fa-address-card"></i>ABOUT US</a>
+              <a class="nav-link" href="pagesAr/About-clinic-Ar.html"><i class="fa-solid fa-address-card"></i>ABOUT US</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="pages/Contact-Clinic.html"><i class="far fa-address-book"></i>CONTACT US</a>
@@ -59,40 +60,38 @@
               <a class="nav-link" href="pages/offers.html"><i class="fa-brands fa-buffer"></i>OFFERS</a>
             </li>
             <li class="d-sm-flex d-xs-flex d-md-flex d-lg-none nav-social-collapse row ml-1">
-              <div class="col-2 dropdown pr-8">
-                <a href="pagesAr/About-clinic-Ar.html" style="right: 20px; bottom: 6px;"><button class="dropbtn">عربي</button></a>
-              </div>
               <a href="#" class="col-2"><i class="fa-solid fa-circle-info text-cus"></i></a>
               <a href="https://wa.me/97433481010" class="col-2"><i class="fa-brands fa-whatsapp text-cus"></i></a>
               <a href="https://www.instagram.com/dr.shaikha.mc?igsh=MTMycHF5ZXFkeHBydw==" class="col-2"><i class="fa-brands fa-instagram text-cus"></i></a>
+              <!-- <a href="#" class="col-2"><i class="fa-brands fa-twitter text-cus"></i></a> -->
+              <!-- <a href="#" class="col-2"><i class="fa-brands fa-linkedin text-cus"></i></a> -->
               <a href="https://www.tiktok.com/@drshaikhaalkubaisi?_t=8ic3nBfW3Os&_r=1" class="col-2"><i class="fa-brands fa-tiktok text-cus"></i></a>
             </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0);"><i class="far fa-copy"></i>Documents</a>
+            </li> -->
           </ul>
         </div>
-        <div class="dropdown" id="btndn" style="display: block;">
-          <a href="pagesAr/About-clinic-Ar.html"><button class="dropbtn">عربي</button></a>
-        </div>
-        <div class="navbar-brand navbar-logo navbar-social m-0">
-          <div class="dropdown">
-            <i class="fa-solid fa-circle-info icon-color"></i>
-            <div class="dropdown-content">
-              <a href="">
-                <div>
-                  <h5>Contact Phone</h5>
-                  <p class="f12">(+974) 4416 8888 (+974) 4411 6915</p>
-                  <h5>Working Hours</h5>
-                  <p class="f12">Saturday - Thursday | 9 AM - 9 PM</p>
+        <div class="navbar-brand navbar-logo navbar-social d-flex flex-row-reverse">
+          <a href="#" style="text-decoration: none;"><i class="fa-solid fa-circle-info showinfo icon-color"></i>
+            <ul class="infoblock hideinfo">
+              <li>
+                <div class="content-info text-center">
+                <h5>Contact Phone</h5>
+                <p class="f12">(+974) 4416 8888 (+974) 4411 6915</p>
+                <h5>Working Hours</h5>
+                <p class="f12">Saturday - Thursday | 9 AM - 9 PM</p>
                 </div>
-              </a>
-            </div>
-          </div>
+              </li>
+            </ul>
+        </a>
           <a href="https://wa.me/97433481010" class=""><i class="fa-brands fa-whatsapp icon-color"></i></a>
           <a href="https://www.instagram.com/dr.shaikha.mc?igsh=MTMycHF5ZXFkeHBydw==" class=""><i class="fa-brands fa-instagram icon-color"></i></a>
           <a href="https://www.tiktok.com/@drshaikhaalkubaisi?_t=8ic3nBfW3Os&_r=1" class=""><i class="fa-brands fa-tiktok icon-color"></i></i></a>
         </div>
         
       </nav>
-    </header>
+      </header>
 
     <!-- <div class="spacer"></div> -->
     <main class=" container offers-container">
@@ -291,23 +290,23 @@
   </section>
   
   <div class="spacer"></div>
-  <section class="about-us mb-0 d-flex flex-wrap justify-content-center align-items-center row m-0">
+  <section class="about-us mb-0 d-flex flex-wrap justify-content-center align-items-center row m-0 flex-row-reverse">
     <div class="image-container footer-img col-lg-5 col-xl-5 col-md-12 col-sm-12 col-xs-12 my-sm-5 d-flex align-items-center justify-content-center">
       <img  src="https://alkubaisimedical.com/wp-content/uploads/2023/10/Logo-1.png"  alt="About Us image">
     </div>
 
-    <div class="footer text-container text-left col-lg-5 col-xl-5 col-md-5 col-sm-12">
-        <h5 class="Blue">Contact Us</h5>
-        <p  class="p-color">850 Al Duhail Street, Doha, Qatar</p>
+    <div class="footer text-container col-lg-5 col-xl-5 col-md-5 col-sm-12 text-right">
+        <h5 class="Blue">اتصل بنا</h5>
+        <p  class="p-color">850 شارع الدحيل، الدوحة، قطر</p>
         <p  class="p-color">(+974) 4416 8888</p>
-        <p  class="p-color">9:00 am - 9:00 pm</p>
-        <p  class="p-color">Saturday - Thursday</p>
+        <p  class="p-color">٩:٠٠ صباحاً - ٩:٠٠ مساءً</p>
+        <p  class="p-color">السبت - الخميس</p>
         <p class="p-color"><a href="mailto:contact@alkubaisimedical.com">contact@alkubaisimedical.com</a></p>
       </div>
   </section> 
-  <footer class="row m-0">
+  <footer class="row m-0 d-flex flex-row-reverse">
     <p class="container-80 col-lg-5 col-xl-5 col-md-6 col-sm-6 text-center">
-      &nbsp &#169 2023 RTH Marketing Agency. All Rights Reserved
+      &nbsp &#169 2023 وكالة التسويق RTH. كل الحقوق محفوظة
     </p>
     <div class="col-7"></div>
   </footer>

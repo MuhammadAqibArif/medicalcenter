@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
   <head>
-    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Clinic - Dr. Shaikha Alkabaisi Medical Center</title>
     <link rel="icon" type="image/x-icon" href="images/Favicon.png">
@@ -19,83 +19,83 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />   
-
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="styles/style.css">
-    <script src="js/navbar.js"></script>
+    <!-- <script src="js/navbar.js"></script> -->
   </head>
   <body>
 
     <header>
-      <nav class="navbar navbar-expand-custom navbar-mainbg nav-padding fixed-top">
-        <a class="navbar-brand navbar-logo" href="index.html"><img src="http://alkubaisimedical.com/wp-content/uploads/2023/10/Logo-1.png" width="150"
+
+      <nav class="navbar navbar-expand-custom navbar-mainbg d-flex flex-row-reverse fixed-top">
+        <a class="navbar-brand navbar-logo" href="index-ar.html"><img src="http://alkubaisimedical.com/wp-content/uploads/2023/10/Logo-1.png" width="150"
           height="54"  alt=""></a>
         <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onclick="hideBtn()">
         <i class="fas fa-bars m-0"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav m-auto">
+          <ul class="navbar-nav m-auto flex-lg-row-reverse">
             <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
             <li class="nav-item ">
-              <a class="nav-link" href="index.html"><i class="fa-solid fa-house"></i>HOME</a>
+              <a class="nav-link text-right" href="index-ar.html"><i class="fa-solid fa-house"></i>الرئيسية</a>
             </li>
-            <li class="nav-item ">
-              <a class="nav-link" href="pages/About-clinic.html"><i class="fa-solid fa-address-card"></i>ABOUT US</a>
+            <li class="nav-item">
+              <a class="nav-link text-right" href="pagesAr/About-clinic-Ar.html"><i class="fa-solid fa-address-card"></i> معلومات عنا</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="pages/Contact-Clinic.html"><i class="far fa-address-book"></i>CONTACT US</a>
+              <a class="nav-link text-right" href="pagesAr/Contact-Clinic-Ar.html"><i class="far fa-address-book"></i>اتصل بنا</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="pages/dermatology.html"><i class="fa-solid fa-user-doctor"></i>DERMATOLOGY</a>
+              <a class="nav-link text-right" href="pagesAr/dermatology-Ar.html"><i class="fa-solid fa-user-doctor"></i>الأمراض الجلدية</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="pages/dentistry.html"><i class="fa-solid fa-tooth"></i>DENTISTRY</a>
+              <a class="nav-link text-right" href="pagesAr/dentistry-Ar.html"><i class="fa-solid fa-tooth"></i>طب الأسنان</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="pages/offers.html"><i class="fa-brands fa-buffer"></i>OFFERS</a>
+              <a class="nav-link text-right" href="pagesAr/offers-Ar.html"><i class="fa-brands fa-buffer"></i>عروض</a>
             </li>
-            <li class="d-sm-flex d-xs-flex d-md-flex d-lg-none nav-social-collapse row ml-1">
+            <li class="d-sm-flex d-xs-flex d-md-flex d-lg-none nav-social-collapse row ml-1" style="justify-content: center;">
               <div class="col-2 dropdown pr-8">
                 <a href="pagesAr/Contact-Clinic-Ar.html" style="right: 20px; bottom: 6px;"><button class="dropbtn">عربي</button></a>
               </div>
               <a href="#" class="col-2"><i class="fa-solid fa-circle-info text-cus"></i></a>
               <a href="https://wa.me/97433481010" class="col-2"><i class="fa-brands fa-whatsapp text-cus"></i></a>
-              <a href="https://www.instagram.com/dr.shaikha.mc?igsh=MTMycHF5ZXFkeHBydw==" class="col-2"><i class="fa-brands fa-instagram text-cus"></i></a>
-              
+              <a href="https://www.instagram.com/dr.shaikha.mc?igsh=MTMycHF5ZXFkeHBydw==" class="col-2"><i class="fa-brands fa-instagram text-cus"></i></a>            
               <a href="https://www.tiktok.com/@drshaikhaalkubaisi?_t=8ic3nBfW3Os&_r=1" class="col-2"><i class="fa-brands fa-tiktok text-cus"></i></a>
             </li>
-            
           </ul>
         </div>
-      </div>
-      <div class="dropdown" id="btndn" style="display: block;">
-        <a href="pagesAr/Contact-Clinic-Ar.html"><button class="dropbtn">عربي</button></a>
-      </div>
-      <div class="navbar-brand navbar-logo navbar-social m-0">
-        <div class="dropdown">
-          <i class="fa-solid fa-circle-info icon-color"></i>
-          <div class="dropdown-content">
-            <a href="">
-              <div>
-                <h5>Contact Phone</h5>
-                <p class="f12">(+974) 4416 8888 (+974) 4411 6915</p>
-                <h5>Working Hours</h5>
-                <p class="f12">Saturday - Thursday | 9 AM - 9 PM</p>
-              </div>
-            </a>
+        <div class="dropdown" id="btndn" style="display: block; padding-left: 5px;">
+          <a href="pages/Contact-Clinic.html"><button class="dropbtn">Eng</button></a>
+        </div>
+        <div class="navbar-brand navbar-logo navbar-social m-0">
+          <a href="https://www.tiktok.com/@drshaikhaalkubaisi?_t=8ic3nBfW3Os&_r=1" class=""><i class="fa-brands fa-tiktok icon-color"></i></a>
+          <a href="https://www.instagram.com/dr.shaikha.mc?igsh=MTMycHF5ZXFkeHBydw==" class=""><i class="fa-brands fa-instagram icon-color"></i></a>
+          <a href="https://wa.me/97433481010" class=""><i class="fa-brands fa-whatsapp icon-color"></i></a>
+          <div class="dropdown">
+            <i class="fa-solid fa-circle-info icon-color"></i>
+            <div class="dropdown-content-ar">
+              <a href="">
+                <div>
+                  <h5>Contact Phone</h5>
+                  <p class="f12">(+974) 4416 8888 (+974) 4411 6915</p>
+                  <h5>Working Hours</h5>
+                  <p class="f12">Saturday - Thursday | 9 AM - 9 PM</p>
+                </div>
+              </a>
+            </div>
           </div>
+          
         </div>
         
-        <a href="https://wa.me/97433481010" class=""><i class="fa-brands fa-whatsapp icon-color"></i></a>
-        <a href="https://www.instagram.com/dr.shaikha.mc?igsh=MTMycHF5ZXFkeHBydw==" class=""><i class="fa-brands fa-instagram icon-color"></i></a>
-        <a href="https://www.tiktok.com/@drshaikhaalkubaisi?_t=8ic3nBfW3Os&_r=1" class=""><i class="fa-brands fa-tiktok icon-color"></i></i></a>
-      </div>
-        
       </nav>
-    </header>
-    
+      </header>
+    <!-- <div class="spacer"></div> -->
     <div class="">
     <main class="container offers-container">
       
@@ -104,7 +104,7 @@
       </div>
 
       <!-- section 1 here  -->
-      <div class="row m-0 p-0 d-flex justify-content-between">
+      <div class="row m-0 p-0 d-flex justify-content-between flex-row-reverse">
         
 
         <!-- <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 d-flex flex-wrap leftForm d-none">
@@ -199,68 +199,68 @@
   
           <div class="col-12">
             <form class="needs-validation" novalidate onsubmit="sendEmail(); reset(); return false;">
-              <div class="form-row row col-12 d-flex flex-wrap">
-                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 mb-3">
+              <div class="form-row row col-12 d-flex flex-wrap flex-row-reverse">
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 mb-3 ">
                   
-                  <input type="text" class="input-feild" id="firstname" placeholder="First name*" value="" required>
+                  <input type="text" class="input-feild-ar text-right" id="firstname" placeholder="الاسم الأول*" value="" required>
                   
                   <div class="invalid-feedback">
-                    The field is required..
+                    مطلوب هذا المجال
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 mb-3 ">
+                  <input type="text" class="input-feild-ar text-right" id="lastname" placeholder="اسم العائلة*" value="" required>
+                  <div class="invalid-feedback">
+                    مطلوب هذا المجال..
                   </div>
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 mb-3">
-                  <input type="text" class="input-feild" id="lastname" placeholder="Last name*" value="" required>
+                  <input type="email" class="input-feild-ar text-right" id="email" placeholder="بريد إلكتروني*" value="" required>
                   <div class="invalid-feedback">
-                    The field is required.
+                    مطلوب هذا المجال
                   </div>
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 mb-3">
-                  <input type="email" class="input-feild" id="email" placeholder="Email*" value="" required>
+                  <input type="text" class="input-feild-ar text-right" id="phoneno" placeholder="رقم الهاتف*" value="" required>
                   <div class="invalid-feedback">
-                    The field is required.
+                    مطلوب هذا المجال
                   </div>
                 </div>
-                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 mb-3">
-                  <input type="text" class="input-feild" id="phoneno" placeholder="Phone No*" value="" required>
+                <div class="col-12 mb-3 ">
+                  <input type="text" class="input-feild-title-ar text-right" id="title" placeholder="عنوان*" value="" required>
                   <div class="invalid-feedback">
-                    The field is required.
+                    مطلوب هذا المجال
                   </div>
                 </div>
-                <div class="col-12 mb-3">
-                  <input type="text" class="input-feild-title" id="title" placeholder="Title*" value="" required>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mb-3 ">
+                  <textarea  class="text-area-ar text-right" rows="4" id="message" placeholder="رسالة*" value="رسالة" required>رسالة</textarea>
                   <div class="invalid-feedback">
-                    The field is required.
-                  </div>
-                </div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mb-3">
-                  <textarea  class="text-area" rows="4" id="message" placeholder="Message*" value="Message" required>Message</textarea>
-                  <div class="invalid-feedback">
-                    The field is required.
+                    مطلوب هذا المجال
                   </div>
                 </div>
                 
               </div>
               
-              <div class="col-lg-11 col-md-11 col-sm-11 col-xs-12 pt-20">
+              <div class="col-lg-11 col-md-11 col-sm-11 col-xs-12 pt-20 text-right">
                 <button class="button btn-B1" type="submit">Submit Message</button>
               </div>
             </form>
           </div>
         
         </div>
-        <div class="col-lg-5 col-md-6 col-sm-12 col-xs-12 pl-50">
-          <h2 class="contact-head">Our Medical Center</h2>
+        <div class="col-lg-5 col-md-6 col-sm-12 col-xs-12 pl-50 text-right">
+          <h2 class="contact-head">مركزنا الطبي</h2>
           <p class="p-color contact-text">
-            We are delighted to be at your service. Below are our details.
+            يسعدنا أن نكون في خدمتكم. فيما يلي التفاصيل لدينا
           </p>
           <div class="business-card">
             
               
               <div class="contact-info">
-                <p class="p-color">Address: 850 Al Duhail Street, Doha, Qatar</p>
-                <p class="p-color">Phone: 44168888 - 4411 6915</p>
-                <p class="p-color">Opening Hours: 09:00 AM to 09:00 PM</p>
-                <p class="p-color">Saturday - Thursday</p>
+                <p class="p-color">العنوان: 850 شارع الدحيل، الدوحة، قطر</p>
+                <p class="p-color">هاتف: 44168888 - 4411 6915</p>
+                <p class="p-color">ساعات العمل: 09:00 صباحًا إلى 09:00 مساءً</p>
+                <p class="p-color">السبت - الخميس</p>
               </div>
             
             
@@ -288,23 +288,23 @@
   
   
     <div class="spacer"></div>
-    <section class="about-us mb-0 d-flex flex-wrap justify-content-center align-items-center row m-0">
+    <section class="about-us mb-0 d-flex flex-wrap justify-content-center align-items-center row m-0 flex-row-reverse">
       <div class="image-container footer-img col-lg-5 col-xl-5 col-md-12 col-sm-12 col-xs-12 my-sm-5 d-flex align-items-center justify-content-center">
         <img  src="https://alkubaisimedical.com/wp-content/uploads/2023/10/Logo-1.png"  alt="About Us image">
       </div>
 
-      <div class="footer text-container text-left col-lg-5 col-xl-5 col-md-5 col-sm-12">
-          <h5 class="Blue">Contact Us</h5>
-          <p  class="p-color">850 Al Duhail Street, Doha, Qatar</p>
+      <div class="footer text-container col-lg-5 col-xl-5 col-md-5 col-sm-12 text-right">
+          <h5 class="Blue">اتصل بنا</h5>
+          <p  class="p-color">850 شارع الدحيل، الدوحة، قطر</p>
           <p  class="p-color">(+974) 4416 8888</p>
-          <p  class="p-color">9:00 am - 9:00 pm</p>
-          <p  class="p-color">Saturday - Thursday</p>
+          <p  class="p-color">٩:٠٠ صباحاً - ٩:٠٠ مساءً</p>
+          <p  class="p-color">السبت - الخميس</p>
           <p class="p-color"><a href="mailto:contact@alkubaisimedical.com">contact@alkubaisimedical.com</a></p>
         </div>
     </section> 
-    <footer class="row m-0">
+    <footer class="row m-0 d-flex flex-row-reverse">
       <p class="container-80 col-lg-5 col-xl-5 col-md-6 col-sm-6 text-center">
-        &nbsp &#169 2023 RTH Marketing Agency. All Rights Reserved
+        &nbsp &#169 2023 وكالة التسويق RTH. كل الحقوق محفوظة
       </p>
       <div class="col-7"></div>
     </footer>
@@ -312,22 +312,6 @@
     <script src="js/main.js"></script>
     <script src="js/navbar.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
-
-    <script>
-      function sendEmail(){
-        Email.send({
-          Host : "smtp.elasticemail.com",
-          Username : "aqib5733@gmail.com",
-          Password : "656BDBD426E1634ED2E4257F0EB16F8549F0",
-          To : 'stubborn782@gmail.com',
-          From : "muhammadaqibarif04@gmail.com",
-          Subject : "This is the subject",
-          Body : "And this is the body"
-        }).then(
-          message => alert(message)
-          );
-      }
-    </script>
     
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>

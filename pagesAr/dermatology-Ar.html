@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
   <head>
-    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dr. Shaikha Alkabaisi Medical Center</title>
     <link rel="icon" type="image/x-icon" href="images/Favicon.png">
@@ -19,63 +19,68 @@
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
     crossorigin="anonymous"
   />
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="styles/style.css">
-    <script src="js/navbar.js"></script>
+    <!-- <script src="js/navbar.js"></script> -->
   </head>
   <body>
 
     
     <header>
-      <nav class="navbar navbar-expand-custom navbar-mainbg nav-padding fixed-top">
-        <a class="navbar-brand navbar-logo" href="index.html"><img src="http://alkubaisimedical.com/wp-content/uploads/2023/10/Logo-1.png" width="150"
+
+      <nav class="navbar navbar-expand-custom navbar-mainbg d-flex flex-row-reverse fixed-top">
+        <a class="navbar-brand navbar-logo" href="index-ar.html"><img src="http://alkubaisimedical.com/wp-content/uploads/2023/10/Logo-1.png" width="150"
           height="54"  alt=""></a>
         <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onclick="hideBtn()">
-        <i class="fas fa-bars  m-0"></i>
+        <i class="fas fa-bars m-0"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav m-auto">
+          <ul class="navbar-nav m-auto flex-lg-row-reverse">
             <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
             <li class="nav-item ">
-              <a class="nav-link" href="index.html"><i class="fa-solid fa-house"></i>HOME</a>
-            </li>
-            <li class="nav-item ">
-              <a class="nav-link" href="pages/About-clinic.html"><i class="fa-solid fa-address-card"></i>ABOUT US</a>
+              <a class="nav-link text-right" href="index-ar.html"><i class="fa-solid fa-house"></i>الرئيسية</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="pages/Contact-Clinic.html"><i class="far fa-address-book"></i>CONTACT US</a>
+              <a class="nav-link text-right" href="pagesAr/About-clinic-Ar.html"><i class="fa-solid fa-address-card"></i> معلومات عنا</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-right" href="pagesAr/Contact-Clinic-Ar.html"><i class="far fa-address-book"></i>اتصل بنا</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="pages/dermatology.html"><i class="fa-solid fa-user-doctor"></i>DERMATOLOGY</a>
+              <a class="nav-link text-right" href="pagesAr/dermatology-Ar.html"><i class="fa-solid fa-user-doctor"></i>الأمراض الجلدية</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="pages/dentistry.html"><i class="fa-solid fa-tooth"></i>DENTISTRY</a>
+              <a class="nav-link text-right" href="pagesAr/dentistry-Ar.html"><i class="fa-solid fa-tooth"></i>طب الأسنان</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="pages/offers.html"><i class="fa-brands fa-buffer"></i>OFFERS</a>
+              <a class="nav-link text-right" href="pagesAr/offers-Ar.html"><i class="fa-brands fa-buffer"></i>عروض</a>
             </li>
-            <li class="d-sm-flex d-xs-flex d-md-flex d-lg-none nav-social-collapse row ml-1">
+            <li class="d-sm-flex d-xs-flex d-md-flex d-lg-none nav-social-collapse row ml-1" style="justify-content: center;">
               <div class="col-2 dropdown pr-8">
-                <a href="pagesAr/dermatology-Ar.html" style="right: 20px; bottom: 6px;"><button class="dropbtn">عربي</button></a>
+                <a href="pages/dermatology.html" style="right: 20px; bottom: 6px;"><button class="dropbtn">Eng</button></a>
               </div>
               <a href="#" class="col-2"><i class="fa-solid fa-circle-info text-cus"></i></a>
               <a href="https://wa.me/97433481010" class="col-2"><i class="fa-brands fa-whatsapp text-cus"></i></a>
-              <a href="https://www.instagram.com/dr.shaikha.mc?igsh=MTMycHF5ZXFkeHBydw==" class="col-2"><i class="fa-brands fa-instagram text-cus"></i></a>
-              
+              <a href="https://www.instagram.com/dr.shaikha.mc?igsh=MTMycHF5ZXFkeHBydw==" class="col-2"><i class="fa-brands fa-instagram text-cus"></i></a>            
               <a href="https://www.tiktok.com/@drshaikhaalkubaisi?_t=8ic3nBfW3Os&_r=1" class="col-2"><i class="fa-brands fa-tiktok text-cus"></i></a>
             </li>
-            
           </ul>
         </div>
-        <div class="dropdown" id="btndn" style="display: block;">
-          <a href="pagesAr/dermatology-Ar.html"><button class="dropbtn">عربي</button></a>
+        <div class="dropdown" id="btndn" style="display: block; padding-left: 5px;">
+          <a href="pages/dermatology.html"><button class="dropbtn">Eng</button></a>
         </div>
         <div class="navbar-brand navbar-logo navbar-social m-0">
+          <a href="https://www.tiktok.com/@drshaikhaalkubaisi?_t=8ic3nBfW3Os&_r=1" class=""><i class="fa-brands fa-tiktok icon-color"></i></a>
+          <a href="https://www.instagram.com/dr.shaikha.mc?igsh=MTMycHF5ZXFkeHBydw==" class=""><i class="fa-brands fa-instagram icon-color"></i></a>
+          <a href="https://wa.me/97433481010" class=""><i class="fa-brands fa-whatsapp icon-color"></i></a>
           <div class="dropdown">
             <i class="fa-solid fa-circle-info icon-color"></i>
-            <div class="dropdown-content">
+            <div class="dropdown-content-ar">
               <a href="">
                 <div>
                   <h5>Contact Phone</h5>
@@ -87,20 +92,17 @@
             </div>
           </div>
           
-          <a href="https://wa.me/97433481010" class=""><i class="fa-brands fa-whatsapp icon-color"></i></a>
-          <a href="https://www.instagram.com/dr.shaikha.mc?igsh=MTMycHF5ZXFkeHBydw==" class=""><i class="fa-brands fa-instagram icon-color"></i></a>
-          <a href="https://www.tiktok.com/@drshaikhaalkubaisi?_t=8ic3nBfW3Os&_r=1" class=""><i class="fa-brands fa-tiktok icon-color"></i></i></a>
         </div>
         
       </nav>
-    </header>
+      </header>
 
     <!-- <div class="spacer"></div> -->
     <main class="container offers-container">
       <div class="title title-head">
         <h2>Dermatology Services</h2>
       </div>
-      <div class="row">
+      <div class="row flex-row-reverse text-right">
         <div class="col-md-4 col-sm-12 offers-card pe-md-2 pe-xs-0">
           <div class="img-box">
             <img
@@ -108,12 +110,12 @@
               alt=""
             />
           </div>
-          <h3>MORPHEUS 8</h3>
+          <h3>مورفيوس 8</h3>
           <p>
-            Morpheus8 is a skin rejuvenation treatment. It combines
-            microneedling with radiofrequency (RF) energy. The tiny needles
-            deliver RF energy deep into your skin, triggering the production of
-            new collagen and elastin, creating firmer skin.
+            Morpheus8 هو علاج لتجديد شباب الجلد. فهو يجمع بين
+            الوخز بالإبر الدقيقة باستخدام طاقة الترددات الراديوية (RF). الإبر الصغيرة
+            توصيل طاقة الترددات اللاسلكية إلى عمق بشرتك، مما يؤدي إلى إنتاج
+            الكولاجين والإيلاستين الجديد، مما يخلق بشرة مشدودة.
           </p>
         </div>
         <div
@@ -125,14 +127,14 @@
               alt=""
             />
           </div>
-          <h3>Fractional Laser</h3>
+          <h3>الليزر الجزئي</h3>
           <p>
-            This fractional laser uses multiple stacking technology to safely
-            double the depth of penetration and speed up tissues regeneration.
-            Action II helps to treat scars, wrinkles, uneven pigmentation, while
-            also helps to tighten skin and reduce pores. Leaving your skin with
-            a shinier new look. Action II Petite Lady can penetrate the vaginal
-            wall to generate new collagen to tighten the vaginal wall.
+            يستخدم هذا الليزر الجزئي تقنية التراص المتعددة بأمان
+            مضاعفة عمق الاختراق وتسريع تجديد الأنسجة.
+            يساعد الإجراء II على علاج الندبات والتجاعيد والتصبغ غير المتساوي
+            كما يساعد على شد البشرة وتقليل المسام. ترك بشرتك مع
+            مظهر جديد أكثر لمعانًا. العمل الثاني Petite Lady يمكنه اختراق المهبل
+            جدار لتوليد الكولاجين الجديد لتضييق جدار المهبل.
           </p>
         </div>
         <div class="col-md-4 col-sm-12 offers-card ps-md-2 ps-xs-0">
@@ -142,17 +144,17 @@
               alt=""
             />
           </div>
-          <h3>ULTRAFORMER</h3>
+          <h3>الترافورمر</h3>
           <p>
-            Is a new technology that uses heat generated from high intensity
-            focused ultrasound (HIFU) waves to create coagulation zones deep in
-            the skin. Coagulation causes immediate lifting impression and
-            triggers a collagen regenration process, the result is noninvasive
-            lifting of loose skin of the face and neck without any surgery.
+            هي تقنية جديدة تستخدم الحرارة المتولدة من كثافة عالية
+            موجات فوق صوتية مركزة (HIFU) لإنشاء مناطق تخثر عميقة
+            الجلد. يؤدي التخثر إلى ظهور انطباع رفع فوري و
+            يؤدي إلى عملية تجديد الكولاجين، والنتيجة غير جراحية
+            شد الجلد المترهل في الوجه والرقبة دون أي جراحة.
           </p>
         </div>
       </div>
-      <div class="row">
+      <div class="row flex-row-reverse text-right">
         <div class="col-md-4 col-sm-12 offers-card pe-md-2 pe-xs-0">
           <div class="img-box">
             <img
@@ -160,14 +162,14 @@
               alt=""
             />
           </div>
-          <h3>SPECTRA CARBON</h3>
+          <h3>سبكترا كاربون</h3>
           <p>
-            This carbon laser is used to remove skin pigments, both deep and on
-            the surface. Skin rejuvenation is also achieved through carbon
-            peeling on Spectra mode, by heating the skin after carbon lotion is
-            absorbed for deep peeling to stimulate new collagen. Spectra can
-            also be used for fine hair removal, hair bleaching, pore reduction,
-            skin tightening, improved texture, acne and tattoos.
+            يُستخدم الليزر الكربوني لإزالة تصبغات الجلد، العميقة منها والداخلية
+            السطح. ويتم تجديد الجلد أيضًا من خلال الكربون
+            التقشير على وضع سبكترا، وذلك عن طريق تسخين البشرة بعد استخدام الغسول الكربوني
+            يمتص للتقشير العميق لتحفيز الكولاجين الجديد. يمكن لأطياف
+            يمكن استخدامه أيضًا لإزالة الشعر الناعم، وتبييض الشعر، وتقليل المسام،
+            شد الجلد وتحسين الملمس وحب الشباب والوشم.
           </p>
         </div>
         <div
@@ -179,14 +181,14 @@
               alt=""
             />
           </div>
-          <h3>LASEMD</h3>
+          <h3>لاسيمد</h3>
           <p>
-            Provides the skin with a youthful glow, evens out pigmentation,
-            while also improving the skins texture and laxity. This laser
-            treatment utilizes nanotechnology that heats up deeper layers of the
-            skin without harming the surface to produce new collagen. LaseMD
-            also utilizes a patented cream that forms multiple barriers on the
-            skin hydrated and keeps nanoparticle-based nutrients contained.
+            يمنح البشرة توهجًا شبابيًا، ويوحد التصبغات،
+            مع تحسين ملمس البشرة وتراخيها أيضًا. هذا الليزر
+            يستخدم العلاج تقنية النانو التي تعمل على تسخين الطبقات العميقة من الجلد
+            الجلد دون الإضرار بالسطح لإنتاج الكولاجين الجديد. LaseMD
+            يستخدم أيضًا كريمًا حاصلًا على براءة اختراع يشكل حواجز متعددة على الجلد
+            يرطب البشرة ويحافظ على احتواء العناصر الغذائية القائمة على الجسيمات النانوية.
           </p>
         </div>
         <div class="col-md-4 col-sm-12 offers-card ps-md-2 ps-xs-0">
@@ -196,19 +198,19 @@
               alt=""
             />
           </div>
-          <h3>GentleMax Pro Laser Hair Removals</h3>
+          <h3>جهاز جنتل ماكس برو لإزالة الشعر بالليزر</h3>
           <p>
-            This laser hair removal has dynamic cooling device technology for
-            optimal comfort and safety during treatments, while providing the
-            fastest completion for full body sessions. GentleMax Pro also
-            delivers the best hair removal technology as the laser wavelengths
-            has a higher absorption rate on melanin, where the energy thermally
-            damages targeted hair bulbs to prevents future regrowth. Reduction
-            in hair is noticeable from the first session.
+            تتميز إزالة الشعر بالليزر هذه بتقنية جهاز التبريد الديناميكي
+            الراحة والأمان الأمثل أثناء العلاج، مع توفير
+            أسرع إنجاز لجلسات الجسم بالكامل. جنتل ماكس برو ايضا
+            يقدم أفضل تكنولوجيا لإزالة الشعر مثل أطوال موجات الليزر
+            يتمتع بمعدل امتصاص أعلى للميلانين، حيث يستمد منه الطاقة حرارياً
+            يدمر بصيلات الشعر المستهدفة لمنع إعادة نموها في المستقبل. تخفيض
+            في الشعر ملحوظ من الجلسة الأولى.
           </p>
         </div>
       </div>
-      <div class="row">
+      <div class="row flex-row-reverse text-right">
         <div class="col-md-4 col-sm-12 offers-card pe-md-2 pe-xs-0">
           <div class="img-box">
             <img
@@ -216,15 +218,15 @@
               alt=""
             />
           </div>
-          <h3>Cleopatra</h3>
+          <h3>كليوباترا</h3>
           <p>
-            Fraxel laser treatment targets aging and sun-damaged skin with
-            microscopic laser columns that penetrate deep into your skin to
-            expedite your body’s remodeling of collagen. Since the laser treats
-            only a fraction of tissue at a time, it leaves the surrounding
-            tissue intact, which promotes very rapid healing. It resurfaces your
-            skin by stimulating the growth of new, healthy skin cells from the
-            inside out.
+            يستهدف علاج فراكسل بالليزر الشيخوخة والجلد المتضرر من الشمس
+            أعمدة ليزر مجهرية تخترق عمق بشرتك
+            تسريع إعادة تشكيل الكولاجين في الجسم. منذ أن يعالج بالليزر
+            فقط جزء صغير من الأنسجة في المرة الواحدة، فإنه يترك البيئة المحيطة
+            الأنسجة سليمة، مما يعزز الشفاء السريع للغاية. إنه يعيد ظهورك
+            الجلد عن طريق تحفيز نمو خلايا الجلد الجديدة والصحية من
+            بالداخل بالخارج.
           </p>
         </div>
         <div
@@ -236,12 +238,12 @@
               alt=""
             />
           </div>
-          <h3>INFINI</h3>
+          <h3>إنفيني</h3>
           <p>
-            Uses fractional mirco-needling radio frequency technology, which
-            combines needles and heating effects to help the body produce new
-            collagen. This in turn reduces acne scars, pores, and stretch marks,
-            while also tightens skin and improves its texture.
+            يستخدم تقنية الترددات الراديوية الجزئية ذات الوخز بالإبر الدقيقة، والتي
+            يجمع بين الإبر وتأثيرات التسخين لمساعدة الجسم على إنتاج مواد جديدة
+            الكولاجين. وهذا بدوره يقلل من ندبات حب الشباب والمسام وعلامات التمدد،
+            بينما يعمل أيضًا على شد البشرة وتحسين ملمسها.
           </p>
         </div>
         <div class="col-md-4 col-sm-12 offers-card ps-md-2 ps-xs-0">
@@ -251,20 +253,20 @@
               alt=""
             />
           </div>
-          <h3>FILLER</h3>
+          <h3>حشو</h3>
           <p>
-            A syringe containing hyaluronic acid. Dermal fillers can be injected
-            into different parts of the face and neck, in order to volumize,
-            contour, enhance, and reshape various features. Patients can achieve
-            desirable results such as eyebrow shaping/lifting, reduced
-            appearance of under eye bags, as well as enhanced lips, cheeks, and
-            chin with strategic placements for added volume. Non-surgical
-            facelifts and nose reshaping can also be achieved with dermal
-            fillers.
+            حقنة تحتوي على حمض الهيالورونيك. يمكن حقن الحشوات الجلدية
+            في أجزاء مختلفة من الوجه والرقبة، من أجل تكثيفها،
+            تحديد المعالم وتعزيزها وإعادة تشكيلها. يمكن للمرضى تحقيق
+            يتم تقليل النتائج المرغوبة مثل تشكيل/رفع الحاجب
+            مظهر الانتفاخات تحت العين، بالإضافة إلى تحسين الشفاه والخدود
+            الذقن مع مواضع استراتيجية لمزيد من الحجم. غير جراحية
+            يمكن أيضًا إجراء عمليات شد الوجه وإعادة تشكيل الأنف عن طريق الجلد
+            الحشو.
           </p>
         </div>
       </div>
-      <div class="row">
+      <div class="row flex-row-reverse text-right">
         <div class="col-md-4 col-sm-12 offers-card pe-md-2 pe-xs-0">
           <div class="img-box">
             <img
@@ -272,15 +274,15 @@
               alt=""
             />
           </div>
-          <h3>SILKPEEL</h3>
+          <h3>سيلكبيل</h3>
           <p>
-            SilkPeel™️ delivers noticeable results, immediately. Unlike
-            microdermabrasion or chemical peels, SilkPeel™️ Dermalinfusion’s
-            diamond-tip application system is non-invasive, free of aluminum
-            crystals and leaves the skin feeling fresh and radiant, not
-            irritated. The SilkPeel™️ procedure is safe, painless and can be
-            performed almost twice as frequently as microdermabrasion without
-            the risk of aggravating sensitive skin.
+            يوفر SilkPeel™️ نتائج ملحوظة على الفور. على عكس
+            التقشير الدقيق أو التقشير الكيميائي، SilkPeel™️ Dermalinfusion’s
+            نظام تطبيق الطرف الماسي غير جراحي، وخالي من الألومنيوم
+            بلورات ويترك البشرة تشعر بالانتعاش والإشراق، لا
+            منزعج. إن إجراء SilkPeel™️ آمن وغير مؤلم ويمكن أن يكون كذلك
+            يتم إجراء ما يقرب من ضعف عدد عمليات التقشير الدقيق للجلد بدونها
+            خطر تفاقم البشرة الحساسة.
           </p>
         </div>
         <!-- <div
@@ -322,7 +324,7 @@
       </div>
       <div class="spacer"></div>
       
-      <div class="row ">
+      <div class="row flex-row-reverse">
         <div class="col-md-5 col-sm-12 d-md-block d-sm-none d-none">
           <img
             width="90%"
@@ -330,9 +332,9 @@
             alt=""
           />
         </div>
-        <div class="col-md-7 col-sm-12">
-          <h6 class="py-3">About Our Services</h6>
-          <h2 class="py-3">Skincare is Your Bestfriend</h2>
+        <div class="col-md-7 col-sm-12 text-right">
+          <h6 class="py-3">حول خدماتنا</h6>
+          <h2 class="py-3">العناية بالبشرة هي أفضل صديق لك</h2>
           <p class="py-3">
             Incididunt ut labore et dolore magna aliqua. Ut enim ad minim
             veniam, quis nostrud exrcitation ullamco laboris nisi ut aliquip ex
@@ -340,11 +342,11 @@
           </p>
           <div class="row py-3">
             <div class="col-6">
-              <h5>Acne Scars</h5>
+              <h5>ندبات حب الشباب</h5>
               <p>Curabitur blandit ante in eros sed vehicula pretium magna</p>
             </div>
             <div class="col-6">
-              <h5>Sun Damage</h5>
+              <h5>ندبات حب الشباب</h5>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
                 ipsum.
@@ -353,11 +355,11 @@
           </div>
           <div class="row py-3">
             <div class="col-6">
-              <h5>Excess Fat</h5>
+              <h5>الدهون الزائدة</h5>
               <p>Curabitur blandit ante in eros sed vehicula pretium magna</p>
             </div>
             <div class="col-6">
-              <h5>Skin Tags</h5>
+              <h5>علامات الجلد</h5>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
                 ipsum.
@@ -381,24 +383,25 @@
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
     </section>
+
     <div class="spacer"></div>
-    <section class="about-us mb-0 d-flex flex-wrap justify-content-center align-items-center row m-0">
+    <section class="about-us mb-0 d-flex flex-wrap justify-content-center align-items-center row m-0 flex-row-reverse">
       <div class="image-container footer-img col-lg-5 col-xl-5 col-md-12 col-sm-12 col-xs-12 my-sm-5 d-flex align-items-center justify-content-center">
         <img  src="https://alkubaisimedical.com/wp-content/uploads/2023/10/Logo-1.png"  alt="About Us image">
       </div>
 
-      <div class="footer text-container text-left col-lg-5 col-xl-5 col-md-5 col-sm-12">
-          <h5 class="Blue">Contact Us</h5>
-          <p  class="p-color">850 Al Duhail Street, Doha, Qatar</p>
+      <div class="footer text-container col-lg-5 col-xl-5 col-md-5 col-sm-12 text-right">
+          <h5 class="Blue">اتصل بنا</h5>
+          <p  class="p-color">850 شارع الدحيل، الدوحة، قطر</p>
           <p  class="p-color">(+974) 4416 8888</p>
-          <p  class="p-color">9:00 am - 9:00 pm</p>
-          <p  class="p-color">Saturday - Thursday</p>
+          <p  class="p-color">٩:٠٠ صباحاً - ٩:٠٠ مساءً</p>
+          <p  class="p-color">السبت - الخميس</p>
           <p class="p-color"><a href="mailto:contact@alkubaisimedical.com">contact@alkubaisimedical.com</a></p>
         </div>
     </section> 
-    <footer class="row m-0">
+    <footer class="row m-0 d-flex flex-row-reverse">
       <p class="container-80 col-lg-5 col-xl-5 col-md-6 col-sm-6 text-center">
-        &nbsp &#169 2023 RTH Marketing Agency. All Rights Reserved
+        &nbsp &#169 2023 وكالة التسويق RTH. كل الحقوق محفوظة
       </p>
       <div class="col-7"></div>
     </footer>

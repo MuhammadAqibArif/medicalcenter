@@ -1,87 +1,149 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap");
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 /* text Slide up transition  */
-@keyframes slideInFromBotton {
+/* @keyframes slideInFromBotton {
   0% {
     transform: translateY(100%);
   }
   100% {
     transform: translateY(0);
   }
-}
-.transistion-text{
+} */
+.transistion-text {
   animation: 1s ease-out 0s 1 slideInFromBotton;
 }
 /* image zoom in transition on Load */
 @keyframes slideInFromLeft {
   0% {
-      transform: translateX(-100%);
+    transform: translateX(-100%);
   }
   100% {
-      transform: translateX(0);
+    transform: translateX(0);
   }
 }
 @keyframes slideInFromRight {
   0% {
-      transform: translateX(100%);
+    transform: translateX(100%);
   }
   100% {
-      transform: translateX(0);
+    transform: translateX(0);
   }
 }
-.transistion-img{
+.transistion-img {
   animation: 1s ease-out 0s 1 slideInFromLeft;
 }
-.transistion-imgR{
+.transistion-img > img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.transistion-imgR {
   animation: 1s ease-out 0s 1 slideInFromRight;
 }
-*{
-    font-family: 'Jost' ;
-      margin: 0;
-      padding: 0;
+* {
+  font-family: "Jost";
+  margin: 0;
+  padding: 0;
 }
 
-  /* Header and Nav Css here */
-  .herder {
-    position: fixed;
-    width: 100%;
-    /* display: flex; */
-    align-items: center;
-    z-index: 1000;
-    transition: 1s;
-    background-color: white;
-  }
-  .header.sticky{
-    background-color: white;
-    box-shadow: 0 .1rem 1rem lightgray;
-  }
+/* Header and Nav Css here */
+.hideinfo{
+  display: none;
+}
+.showinfo:hover + .hideinfo{
+  display: block; 
+}
 
-  .header-img{
-    padding: 23px 10px 10px 10px;
-  }
-  .margin-32{
+
+/* Add this CSS to your existing stylesheet or create a new one */
+
+.infoblock {
+  display: none;
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+  transform: translate(-70%, 100%);
+  border-radius: 10px;
+  padding: 20px 20px 0px 20px;
+}
+
+/* Remove any potential dots or bullets from the left */
+.infoblock ul,
+.infoblock li {
+  list-style-type: none;
+}
+
+/* Style for the content inside the infoblock */
+.content-info {
+  text-align: left;
+}
+
+/* Show the infoblock when hovering over the info icon */
+.showinfo:hover + .infoblock {
+  display: block;
+}
+
+
+
+.main-header {
+  /* display: none; */
+  position: fixed;
+  width: 100%;
+  align-items: center;
+  z-index: 1000;
+  transition: 1s;
+  background-color: white;
+}
+.header.sticky {
+  background-color: white;
+  box-shadow: 0 0.1rem 1rem lightgray;
+}
+.inactiveLink {
+  pointer-events: none;
+  cursor: default;
+}
+.header-img {
+  padding: 23px 10px 10px 10px;
+}
+.margin-32 {
   margin-right: 32px;
   margin-left: 32px;
- 
-  }
-  .pad-32{
-    padding: 0px 32px;
-  }
-  .p-10{
-    padding: 10px;
-  }
-
-  .micons a {
-    margin: 0 10px;
-    text-decoration: none;
-    font-size: 21px;
+}
+.pad-32 {
+  padding: 0px 32px;
+}
+.p-10 {
+  padding: 10px;
+}
+.container-80 {
+  width: 82%;
+  margin: auto;
 }
 
-.bottom-border{
+
+
+.micons a {
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 21px;
+}
+.title-head > h2 {
+  font-size: 2rem;
+}
+.bottom-border {
   border-bottom: black solid 1px;
 }
 
-.nav-pad{
+.nav-pad {
   padding: 20px 0px 20px 30px;
   text-transform: uppercase;
   letter-spacing: 2.41px;
@@ -90,98 +152,105 @@
 }
 /* Header and Nav Css here */
 
- /* Section 1 Css here  */
+/* Section 1 Css here  */
 
- .img-fluid{
+.img-fluid {
   position: relative;
 }
 
-h5.Blue{
-  color: #013CA3;
+h5.Blue {
+  color: #013ca3;
   font-size: 22px;
   font-weight: 500;
 }
 
-.boxcont{
-  background-color: #d1e4ff;
-  /* display: flex; */
+.boxcont {
+  /* background-color: #d1e4ff; */
+  /* background: white ; */
   text-align: left;
-  /* position: absolute; */
-  z-index: 10;
+  position: absolute !important;
   bottom: 0%;
-  left: 5%;
-  padding-top: 10px;
+  left: 51%;
+  -ms-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
+  /* padding-top: 20px; */
+
 }
-.box-left-padd{
-  padding:  35px 0px 30px 35px;
+.box-left-padd {
+  padding: 35px 0px 30px 35px;
   border-color: rgba(0, 0, 0, 0.06);
   border-width: 0px 1px 0px 0px;
   border-style: solid;
 }
-.box-left-padd-last{
-  padding:  35px 0px 30px 35px;
+.box-left-padd-last {
+  padding: 35px 0px 30px 35px;
 }
-.boxrightpadd{
+.boxrightpadd {
   padding-right: 10px;
 }
 
- /* Section 1 Css here End */
+/* Section 1 Css here End */
 
- /* Section 2 Css here */
+/* Section 2 Css here */
 
- .imgboder{
+.imgboder {
   border-style: solid;
   border-width: 2px;
   border-color: blue;
   border-radius: 10px;
   align-items: center;
-  
 }
 
-.boxtreat{
-  /* background-color: pink; */
-  position: relative;
-}
-.textlight{
-  color: #52A2FD; 
+.textlight {
+  color: #52a2fd;
   font-weight: 500;
 }
-h2.Blue{
-  color: #013CA3;
+h2.Blue {
+  color: #013ca3;
   font-size: 32px;
   font-weight: 500;
 }
-.p-color{
-  color: #54546F; 
+.p-color {
+  color: #54546f;
 }
- /* Section 2 Css here End */
+/* Section 2 Css here End */
 
- .sectionbackground{
+.sectionbackground {
   background-color: #eef5f5;
-  padding: 120px 30px 132px 20px;
- }
+  padding: 120px 0px 132px 0px;
+}
 
-  /* section 4 css here */
+.card-background {
+  background-image: url(/images/Card-Line.jpg);
+  object-fit: cover;
+  background-position: center center;
+}
 
-  .cardwidth{
-    width: 18rem;
-  }
-  /* section 4 css here End */
+/* section 4 css here */
 
+.cardwidth {
+  width: 18rem;
+  background: transparent !important;
+}
+/* section 4 css here End */
 
-  /* Section 4 Css here */
- button {
+/* Section 4 Css here */
+.button1 {
   background-color: #ff583c;
   color: white;
-  padding: 14px 80px;
+  padding: 14px 49px;
   border: none;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   font-size: 16px;
   cursor: pointer;
   margin-top: 10px;
 }
-
-.input-feild{
+.button1:hover{
+  background-color: white;
+  color: #ff583c;
+  cursor: pointer;
+}
+.input-feild {
   width: 100%;
   height: 56px;
   background-color: #ffffff;
@@ -194,24 +263,228 @@ h2.Blue{
   padding-left: 25px;
   border-radius: 0;
 }
+.input-feild-ar {
+  width: 100%;
+  height: 56px;
+  background-color: #ffffff;
+  font-size: 16px;
+  line-height: 64px;
+  color: #54546f;
+  font-weight: 400;
+  border: 0;
+  margin-bottom: 15px;
+  padding-right: 25px;
+  border-radius: 0;
+}
+.input-feild-ar {
+  width: 100%;
+  height: 56px;
+  background-color: #ffffff;
+  font-size: 16px;
+  line-height: 64px;
+  color: #54546f;
+  font-weight: 400;
+  border: 0;
+  margin-bottom: 15px;
+  padding-right: 25px;
+  border-radius: 0;
+}
+.input-feild-title {
+  width: 100%;
+  height: 56px;
+  background-color: #ffffff;
+  font-size: 16px;
+  line-height: 64px;
+  color: #54546f;
+  font-weight: 400;
+  border: 0;
+  margin-bottom: 15px;
+  padding-left: 25px;
+  border-radius: 0;
+}
+.input-feild-title-ar {
+  width: 100%;
+  height: 56px;
+  background-color: #ffffff;
+  font-size: 16px;
+  line-height: 64px;
+  color: #54546f;
+  font-weight: 400;
+  border: 0;
+  margin-bottom: 15px;
+  padding-right: 25px;
+  border-radius: 0;
+}
+.text-area {
+  resize: none;
+  width: 100%;
+  background-color: #ffffff;
+  line-height: 30px;
+  font-size: 16px;
+  color: #54546f;
+  font-weight: 400;
+  border: 0;
+  margin-bottom: 15px;
+  padding-left: 25px;
+  border-radius: 0;
+}
+.text-area-ar {
+  resize: none;
+  width: 100%;
+  background-color: #ffffff;
+  line-height: 30px;
+  font-size: 16px;
+  color: #54546f;
+  font-weight: 400;
+  border: 0;
+  margin-bottom: 15px;
+  padding-right: 25px;
+  border-radius: 0;
+}
+/* .button2 {
+  background-color: #ff583c;
+  color: white;
+  padding: 14px 50px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.button2:hover{
+  background-color: white;
+  color: #ff583c;
+  cursor: pointer;
+} */
+.btn-B1 {
+  color: white;
+  padding: 14px 50px;
+  font-size: 16px;
+  background-color: #4fa7e3;
+  border: 1px solid white;
+  cursor: pointer;
+  
+}
+.btn-ar{
+  background-color: white;
+  color: #072f85;
+  padding: 5px;
+}
+.btn-B1:hover {
+  background-color: white;
+  color: #4fa7e3;
+  cursor: pointer;
+}
 
+/* Style The Dropdown Button */
+.dropbtn {
+  background-color: #fff;
+  color: #072f85;
+  padding: 4px;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  border: 1px solid #072f85;
+  border-radius: 6px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  /* min-width: 160px; */
+  right: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 5%;
+  text-align: center;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #072f85;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  pointer-events: none;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color:  #072f85;
+  color: #fff;
+  border-radius: 6px;
+}
+
+.dropdown-content-ar {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  /* min-width: 160px; */
+  left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 5%;
+  text-align: center;
+}
+
+/* Links inside the dropdown */
+.dropdown-content-ar a {
+  color: #072f85;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  pointer-events: none;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content-ar a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content-ar {
+  display: block;
+}
+
+
+.paddRight10 {
+  padding-right: 10px;
+}
 /* Section 4 here Css End */
 
 /* section 5 here Css */
 
-h2.White{
+h2.White {
   color: white;
   font-size: 32px;
   font-weight: 500;
 }
-h4.White{
+h4.White {
   color: white;
   font-size: 20px;
   font-weight: 500;
 }
-.background-Blue{
-  background-color: #013CA3;
+.background-Blue {
+  background: url(/images/blue-bg.jpg);
+  object-fit: cover;
   padding: 70px 30px 70px 20px;
+}
+.blue-width {
+  width: 85% !important;
 }
 /* section 5 here Css End */
 
@@ -219,32 +492,27 @@ h4.White{
 
 .text-container {
   flex: 1;
-  margin: 0px 0px 0px 54px;
+  margin: 0px auto;
 }
 
 .image-container {
   flex: 1;
-  margin-right: 20px;
+  margin-right: 0 auto;
   display: inline-block;
 }
 
 .image-container img {
-  width: 100%;
+  max-width: 370px;
   height: auto;
-  border-radius: 5px;
+  margin: 0 auto;
 }
 
 .about-us {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 40px;
-  background-color: #F0F5FF;
+  padding: 100px 40px;
+  background-color: #eef5f5;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
-
 
 .about-us h2 {
   font-size: 1.5em;
@@ -264,127 +532,507 @@ h4.White{
   border-radius: 5px;
 }
 
+.about-us p a {
+  background-color: transparent;
+  color: #0000EE;
+  padding: 10px 0px 10px 0px;
+  
+}
+.about-us p a:hover {
+  cursor: pointer;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
 .about-us a:hover {
   background-color: #0067cc;
 }
 
 footer {
-  padding: 20px;
-  text-align: left;
-  background-color: #DCE5E5;
-  color: #667E8E;
+  padding: 20px 0;
+  background-color: #dce5e5;
+  color: #667e8e;
 }
 
 /* Footer Css here End */
 
-
-
 /* only Padding here top, bottom, right, left */
 
-.pt-20{
+.pt-0 {
+  padding-top: 0px;
+}
+.pb-0 {
+  padding-bottom: 0px;
+}
+.pl-0 {
+  padding-left: 0px;
+}
+.pr-0 {
+  padding-right: 0px;
+}
+.pr-8{
+  padding-right: 8px;
+}
+.pt-20 {
   padding-top: 20px;
 }
-.pt-30{
+.pt-30 {
   padding-top: 30px;
 }
-.pb-30{
+.pb-30 {
   padding-bottom: 30px;
 }
-.pad-trb{
+.pad-trb {
   padding: 15px 10px 15px 0px;
 }
-.pl-20{
+.pl-20 {
   padding-left: 20px;
 }
-.pr-20{
+.pr-20 {
   padding-right: 20px;
 }
-.pl-50{
+.pl-50 {
   padding-left: 50px;
 }
-.pr-55{
+.pr-55 {
   padding-right: 55px;
 }
-.pt-100{
+.pt-100 {
   padding-top: 100px;
 }
-.pt-50{
+.pt-150 {
+  padding-top: 150px;
+}
+.pt-50 {
   padding-top: 50px;
 }
 /* only Padding here top, bottom, right, left */
 
 /* only margin here  */
 
-.mr-10{
+.mr-10 {
   margin-right: 10px;
 }
-.mt-15{
+.mt-15 {
   margin-top: 10px;
 }
-
+.mb-8 {
+  margin-bottom: 8px;
+}
 /* Font Sizes Here */
 
-.f8{
+.f8 {
   font-size: 8px;
 }
-.f9{
-font-size: 9px;
+.f9 {
+  font-size: 9px;
 }
-.f10{
+.f10 {
   font-size: 10px;
 }
-.f11{
+.f11 {
   font-size: 11px;
 }
-.f12{
+.f12 {
   font-size: 12px;
 }
-.f13{
+.f13 {
   font-size: 13px;
 }
-.f14{
+.f14 {
   font-size: 14px;
 }
-.f15{
+.f15 {
   font-size: 15px;
 }
-.f16{
+.f16 {
   font-size: 16px;
 }
 
 /* Font Sizes Here */
 
-  h1 {
-    font-size: 2em;
-    margin-bottom: 10px;
-  }
-  
-  h2 {
-    font-size: 1.5em;
-    margin-bottom: 0;
-  }
-  
-  main {
-    padding: 20px;
-  }
-  
-  section {
-    margin-bottom: 20px;
-    padding: 20px;
-    background-color: #fff; /* White background for sections */
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  
-
-
-.centr{
-    text-align: center;
+h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
 }
 
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 0;
+}
 
+main {
+  padding: 20px;
+}
 
-  
- 
+section {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #fff; /* White background for sections */
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
+/* About Styles */
+
+/* header Css here  */
+
+.headerimg {
+  padding: 10px 0px 10px 20px;
+}
+.nav-about {
+  padding-left: 50px;
+}
+
+/* header Css here End */
+
+/*About US Section 1 Css here  */
+
+.headimg {
+  padding: 0px 20px 30px 30px;
+}
+.head-text {
+  padding: 20px 20px 0px 30px;
+}
+
+h2.Black {
+  color: black;
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.toggle-button {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.btn-info {
+  float: right;
+  position: relative;
+  bottom: 40%;
+  right: 3%;
+}
+
+/*About US Section 1 Css here End */
+
+/* Questiones and Video Section 2 here */
+
+.faq-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-right: 50px;
+}
+
+.faq {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.11);
+  border-radius: 5px;
+  width: 100%;
+}
+.faq-Head {
+  padding: 20px 30px 20px 30px;
+  background-color: #47a1e7 !important;
+  color: white;
+}
+.faq-body {
+  padding: 15px 30px 0.04px 30px;
+}
+.faq h2 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.faq p {
+  line-height: 1.5;
+}
+
+.acc_container {
+  width: 100%;
+  max-width: 600px;
+}
+
+.acc_box {
+  width: 100%;
+  background-color: white;
+  margin: 10px 0px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.11);
+}
+
+.acc_heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  /* background-color: #47A1E7; */
+  padding: 20px 30px 20px 30px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.heading {
+  font-size: 16px;
+  margin-bottom: 0px;
+}
+.symbol {
+  font-size: 20px;
+  margin-bottom: 0px;
+  color: #47a1e7;
+}
+
+.acc_text {
+  max-height: 0;
+  overflow: hidden;
+  display: none;
+  /* transition: all 1s ease-in-out; */
+}
+
+.acc_text.active {
+  display: block; /* or any other style to make it visible */
+}
+
+.acc_box.active .acc_text {
+  max-height: 100vh;
+  background-color: white;
+  transition: all 1s ease-in-out;
+  padding: 15px 30px 0.04px 30px;
+  color: #54546f;
+}
+
+.acc_box.active .symbol {
+  color: white;
+}
+
+.acc_text p {
+  padding-top: 10px;
+  line-height: 28px;
+}
+
+.acc_box.active {
+  background-color: #47a1e7;
+  color: white;
+}
+
+.acc_box.active .heading {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Questiones and Video Section 2 here End */
+
+/* Contact Styles Here */
+
+/* .contact-Background {
+  background-color: #f0f5ff;
+} */
+
+/* section 1 Css here */
+.leftForm {
+  padding: 92px 30px 60px 30px;
+  background-image: url(https://alkubaisimedical.com/wp-content/uploads/2020/10/form-bg.jpg);
+}
+
+.contact-info {
+  background-color: white;
+  padding: 30px 40px 30px 40px;
+}
+.contact-head {
+  padding: 30px 40px 30px 40px;
+}
+.contact-text{
+  padding: 0px 40px 0px 40px;
+}
+.Select-feild {
+  width: 100%;
+  border: none;
+  height: 56px;
+  line-height: 64px;
+  font-weight: 400;
+  margin-bottom: 15px;
+  padding-left: 20px;
+  background: white;
+  color: #727272;
+}
+
+.buttonblu {
+  background-color: #4fa7e3;
+  color: white;
+  padding: 14px 80px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 0%;
+}
+
+/* Offer Style */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.title {
+  text-align: center;
+}
+.offers-container {
+  padding-top: 100px;
+  width: 85% !important;
+}
+/* .offers-card {
+  width: 50%;
+  padding: 0 10%;
+} */
+/* .offers-card > img {
+  width: 680px;
+  max-width: 100%;
+  height: 290px;
+  border: 2px solid #0053b1;
+  border-radius: 10px;
+  display: inline-block;
+}
+.offers-card > img:hover {
+  transform: scale(1);
+  transition: all 0.3s ease;
+  width: 110%;
+  height: 100%;
+} */
+.img-box > img {
+  width: 720px;
+  max-width: 100%;
+  height: 290px;
+
+  border: 2px solid #0053b1;
+  border-radius: 10px;
+}
+.img-box {
+  display: inline-block;
+}
+.img-box:hover {
+  transform: scale(1.03);
+  transition: all 0.3s ease;
+}
+.img-box-full {
+  width: 100%;
+}
+.img-box-full > img {
+  min-width: 100%;
+  height: 290px;
+}
+.offers-card > h3 {
+  font-size: 22px;
+  color: #0053b1;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin: 20px 0 30px 0;
+}
+.offers-card > p {
+  color: #3d3c37;
+  line-height: 28px !important;
+  font-size: 16px;
+}
+.why-us {
+  height: 700px;
+  padding: auto;
+  align-items: center;
+  width: auto;
+  background: url(./../assets/images/bg-img.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  overflow: hidden !important;
+  background-size: cover;
+  background-position: center center;
+}
+.about-our-services > * {
+  padding-left: 0 !important;
+}
+.about-our-services {
+  align-items: center;
+}
+.spacer {
+  height: 100px;
+}
+.spacer-md {
+  height: 100px;
+}
+
+.title-head {
+  background: url(https://alkubaisimedical.com/wp-content/uploads/2023/12/banner-900x180-copy.jpg);
+  color: #fff;
+  padding: 10px;
+  margin: 20px 0;
+  border-radius: 10px;
+}
+.trust-us-img > img {
+  max-width: 100%;
+  object-fit: cover;
+}
+@media screen and (max-width: 992px) {
+  .offers-container {
+    width: 100% !important;
+  }
+  .card-background {
+    background: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .why-us {
+    background-position: top left;
+  }
+  .footer-img > img {
+    max-width: 350px !important;
+    height: auto;
+    margin: auto;
+  }
+  .boxcont {
+    position: relative !important;
+    bottom: 0%;
+    left: 50%;
+  }
+  .spacer-md {
+    display: none;
+  }
+}
+@media screen and (max-width: 400px) {
+  .why-us {
+    background-position: top left;
+  }
+  .footer-img > img {
+    max-width: 200px !important;
+    height: auto;
+    margin: auto;
+  }
+  .footer {
+    padding-top: 30px;
+  }
+  h2.White {
+    font-size: 16px;
+  }
+  h5.Blue {
+    font-size: 16;
+  }
+  .spacer {
+    height: 0px !important;
+  }
+  .spacer-md {
+    height: 0px !important;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .footer {
+    font-size: 2rem !important;
+  }
+  .footer h5 {
+    font-size: 2.5rem;
+  }
+}
+
+/* Others */
+.banner-img {
+  margin: 0 !important;
+}
